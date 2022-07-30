@@ -1,0 +1,899 @@
+@charset "utf-8";
+
+/* リセット */
+html,
+body,
+header,
+footer,
+main,
+section,
+h1,
+h2,
+h3,
+ul,
+li,
+p,
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: #000000;
+    font-family: "A1 Mincho", "游明朝", YuMincho, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", "Sheila", sans-serif;
+    font-feature-settings: "palt";
+}
+
+a {
+    /*下線を消す*/
+    text-decoration: none;
+    /*色を消す*/
+    color: inherit;
+    transition: 0.3s;
+}
+
+/* a:hover {
+    opacity: 0.5;
+} */
+
+ul {
+    /*左の「・」を消す*/
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    border: none;
+}
+
+/* ここから */
+
+html {
+    scroll-behavior: smooth;
+    /* スムーズにスクロールさせるコード */
+}
+
+body {
+    background: #e7e7e7;
+}
+
+
+/* ************************************************************************* こ こ か ら ********************************************************************* */
+.sp_background {
+    display: none;
+}
+
+.sp_menubar {
+    display: none;
+}
+
+.sp_logo {
+    display: none;
+}
+
+.btn {
+    display: none;
+}
+
+.sp_nav {
+    display: none;
+}
+
+.sp_one {
+    display: none;
+}
+
+.sp_two {
+    display: none;
+}
+
+.sp_mail {
+    display: none;
+}
+
+.sp_toi {
+    display: none;
+}
+
+.sp_sigoto {
+    display: none;
+}
+
+.sp_irai {
+    display: none;
+}
+
+.sp_submit-btn {
+    display: none;
+}
+
+.sp_footer_logo {
+    display: none;
+}
+
+.sp_last {
+    display: none;
+}
+
+.sp_one {
+    display: none;
+}
+
+.sp_profile {
+    display: none;
+}
+
+.sp_pro {
+    display: none;
+}
+
+.sp_footer {
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    /* スムーズにスクロールさせるコード */
+}
+
+.background {
+    background: #dddddd;
+}
+
+
+.header_wrap {
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+
+.menubar {
+    /* MENUbar追跡 ↓２つ*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.sp_logo {
+    display: none;
+}
+
+.sp_nav {
+    display: none;
+    z-index: 1000;
+}
+
+
+.pc_nav {
+    text-align: right;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.pc_nav ul {
+    margin: 0;
+    padding: 0;
+    font-family: 游明朝;
+    font-size: 15px;
+    display: flex;
+    /* margin-left: 450px; */
+}
+
+.pc_nav ul li {
+    margin-right: 90px;
+    list-style: none;
+    display: inline-block;
+    /* ここで項目の幅を指定します */
+}
+
+/* 最終右側のみ余白削除 */
+.pc_nav ul li:last-child {
+    margin-right: 0;
+}
+
+.pc_nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* メニュー hover時に下線を出す */
+.pc_nav li:hover {
+    border-bottom: 2px solid #b0c0c7;
+    /* 下線の太さや色を指定 */
+}
+
+/* PROFILE文字 */
+.profile {
+    font-family: 游明朝;
+    font-size: 40px;
+    /* letter-spacing: 4em; */
+    text-align: center;
+    margin: 0 auto;
+    color: #000000;
+    padding-top: 200px;
+}
+
+/* プロフィール文字 */
+.pro {
+    font-family: 游ゴシック;
+    font-weight: normal;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    color: #000000;
+    padding: 20px 0 90px 0;
+    text-align: center;
+    /* z-index: 2300; */
+}
+
+/* 中のグレー枠 */
+.gray {
+    width: 100%;
+    background: #c9c9c9;
+    padding: 100px 20px;
+    box-sizing: border-box;
+}
+
+/* プロフィールの大枠 */
+.syokai {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* oitatiの外枠 */
+.matome {
+    max-width: 1000px;
+    background: #a6b6bd;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* 1987年～文章 */
+.oitach {
+    font-family: 游ゴシック;
+    font-weight: normal;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: left;
+    line-height: 1.75em;
+    letter-spacing: 0.1em;
+    padding: 1.5% 2%;
+}
+
+/* キャンプの写真と文章の外枠 */
+.flame {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin-top: 120px;
+}
+
+/* キャンプの写真のみの枠 */
+/* .small_flame {
+
+} */
+
+/* 焚火とコーヒーの写真 */
+.fire {
+    width: 70%;
+}
+
+/* 製作者が夜ホットコーヒーを飲みメガネがくもっている写真 */
+.hot_coffee {
+    width: 70%;
+    margin-left: 70px;
+    margin-top: -40px;
+}
+
+/* キャンプの文章の外枠 */
+.matome_camp {
+    width: 50%;
+    background: #a6b6bd;
+    padding: 1.5% 2%;
+    box-sizing: border-box;
+}
+
+/* キャンプの文章 */
+.camp {
+    font-family: 游ゴシック;
+    font-weight: normal;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: left;
+    line-height: 1.75em;
+    letter-spacing: 0.05em;
+}
+
+/* ゴルフの文章と写真の外枠 */
+.golf_green {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* ゴルフの文章の外枠 */
+.fore {
+    width: 50%;
+    background: #a6b6bd;
+    padding: 1.5% 2%;
+    box-sizing: border-box;
+}
+
+/* ゴルフの文章 */
+.golf {
+    font-family: 游ゴシック;
+    font-weight: normal;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: left;
+    line-height: 1.75em;
+    letter-spacing: 0.05em;
+
+}
+
+/* ゴルフの写真 */
+.golf_play {
+    width: 40%;
+}
+
+/* 野球観戦の文章と写真の外枠 */
+.npb {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* 野球観戦の写真 */
+.baseball {
+    width: 40%;
+}
+
+/* 野球観戦の文章の外枠 */
+.npb_pro {
+    width: 50%;
+    background: #a6b6bd;
+    padding: 1.5% 2%;
+    box-sizing: border-box;
+}
+
+/* 野球観戦の文章 */
+.baseball_pro {
+    font-family: 游ゴシック;
+    font-weight: normal;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: left;
+    line-height: 1.75em;
+    letter-spacing: 0.05em;
+}
+
+/* CONTACTの外枠 */
+.two {
+    width: 100%;
+    padding: 50px;
+    margin: 0 auto;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* CONTACTの文字 */
+.toi {
+    font-family: 游明朝;
+    font-size: 40px;
+    letter-spacing: 0.1em;
+    color: #8a8062;
+}
+
+/* ロゴ～営業文章 */
+.sigoto {
+    font-family: 游ゴシック;
+    font-weight: normal;
+    font-size: 20px;
+    color: #8a8062;
+    letter-spacing: 0.1em;
+    padding-top: 70px;
+}
+
+/* ご相談～案内文章 */
+.irai {
+    font-family: 游ゴシック;
+    font-weight: normal;
+    font-size: 20px;
+    color: #8a8062;
+    letter-spacing: 0.1em;
+    padding: 40px 0 100px 0;
+}
+
+/* お問い合わせアニメーションボタン */
+.okuri .okr_btn {
+    /* background: #d3d3d3; */
+    /* color: #000000; */
+    /* border: none;
+    position: relative;
+    height: 60px; */
+    font-size: 1.6em;
+    cursor: pointer;
+    transition: 800ms ease all;
+    outline: none;
+    font-family: 游明朝;
+    max-width: 320px;
+    /* height: 50px; */
+    line-height: 50px;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    display: block;
+    background: #c4b69a;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    /* text-align: center; */
+    margin: 40px auto 130px;
+}
+
+.okuri .okr_btn:hover {
+    background: #000000;
+    color: #c4b69a;
+}
+
+/* フッターロゴ */
+.footer_logo {
+    padding-bottom: 70px;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+/* コピーライト */
+.last {
+    font-family: 游明朝;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    color: #000000;
+}
+
+
+
+
+/* ********************************************************スマホ版********************************************************************* */
+
+/* スマホ対応↓ 767pxだがillustratorは375pxで作成375で数値等考えていい*/
+@media screen and (max-width:767px) {
+
+    .sp_background {
+        display: block;
+    }
+
+    .sp_menubar {
+        display: block;
+    }
+
+    .sp_logo {
+        display: block;
+    }
+
+    .btn {
+        display: block;
+    }
+
+    .sp_one {
+        display: block;
+    }
+
+    .sp_two {
+        display: block;
+    }
+
+    .sp_mail {
+        display: block;
+    }
+
+    .sp_toi {
+        display: block;
+    }
+
+    .sp_sigoto {
+        display: block;
+    }
+
+    .sp_irai {
+        display: block;
+    }
+
+    .sp_submit-btn {
+        display: block;
+    }
+
+    .sp_footer_logo {
+        display: block;
+    }
+
+    .sp_last {
+        display: block;
+    }
+
+    .sp_one {
+        display: block;
+    }
+
+    .sp_profile {
+        display: block;
+    }
+
+    .sp_pro {
+        display: block;
+    }
+
+    .sp_footer {
+        display: block;
+    }
+
+    .menubar {
+        display: none;
+    }
+
+    .one {
+        display: none;
+    }
+
+    .two {
+        display: none;
+    }
+
+    /* 全体背景色 */
+    .sp_background {
+        background: #dddddd;
+        width: 100%;
+    }
+
+    .sp_logo {
+        width: 50%;
+        padding: 25px 0 0 5%;
+    }
+
+    .sp_nav ul {
+        display: flex;
+        text-align: center;
+    }
+
+    .sp_nav li {
+        /* width: 104px;
+        margin-right: 55px; */
+        font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        color: #fff;
+    }
+
+    /* 最終右側のみ余白削除 */
+    .sp_nav ul li:last-child {
+        margin-right: 0;
+    }
+
+    /* 三本ライン */
+    .btn {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 5%;
+        right: 10%;
+        z-index: 1000;
+    }
+
+    /* 三本ラインの真中の線 */
+    .btn span {
+        background: #000000;
+        width: 33px;
+        height: 2px;
+        display: block;
+        position: relative;
+        top: 10px;
+        transition: 0.3s;
+    }
+
+    /* 三本ライン上下線 */
+    .btn span::before,
+    .btn span::after {
+        content: '';
+        width: 33px;
+        height: 2px;
+        background: #000000;
+        display: block;
+        position: absolute;
+        transition: 0.3s;
+    }
+
+    .btn span::before {
+        bottom: 10px;
+    }
+
+    .btn span::after {
+        top: 10px;
+    }
+
+    .open span {
+        background: transparent;
+    }
+
+    /* 回転して×になる */
+    .open span::before {
+        bottom: 0px;
+        transform: rotate(45deg);
+    }
+
+    .open span::after {
+        top: 0px;
+        transform: rotate(135deg);
+    }
+
+    .sp_nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.7);
+    }
+
+    .sp_nav ul {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    /* 三本ライン開いた後のメニュー */
+    .sp_nav li {
+        text-align: center;
+        color: #ffffff;
+        font-size: 17px;
+        padding: 10px 0;
+        font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    }
+
+    /* プロフィールの外側 */
+    .sp_pf {
+        text-align: center;
+        margin: 0 auto;
+        max-width: 180px;
+    }
+
+    /* PROFILE */
+    .sp_profile {
+        font-family: 游明朝;
+        font-size: 35px;
+        letter-spacing: 0.1em;
+        color: #000000;
+        padding-top: 70px;
+    }
+
+    /* プロフィール */
+    .sp_pro {
+        font-family: 游ゴシック;
+        font-weight: normal;
+        font-size: 15px;
+        color: #000000;
+        letter-spacing: 0.05em;
+        padding: 10px 0 40px 0;
+    }
+
+    /* section one */
+    .sp_one {
+        text-align: center;
+        margin: 0 auto;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        padding: 50px 0;
+        background: #c9c9c9;
+    }
+
+    /* 全体の外側 */
+    .sp_gray {
+        background: c9c9c9;
+        width: 100%;
+    }
+
+    /* 1987年～文章 */
+    .sp_oitach {
+        font-family: 游ゴシック;
+        font-weight: normal;
+        font-size: 15px;
+        color: #000000;
+        letter-spacing: 0.05em;
+        line-height: 2em;
+        text-align: left;
+        padding: 0 8% 40px;
+        box-sizing: border-box;
+    }
+
+    /* コーヒーと焚火の写真２枚の外側 */
+    .sp_small_flame {
+        /* width: 100%; */
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .sp_small_flame img {
+        width: 100%;
+    }
+
+    /* コーヒーの写真 */
+    .sp_hot_coffee {
+        width: 60%;
+        text-align: left;
+        position: relative;
+        z-index: 1500;
+    }
+
+    /* 焚火の写真 */
+    .sp_fire {
+        width: 60%;
+        text-align: right;
+        margin-top: -70px;
+        margin-left: 30%;
+    }
+
+    /* キャンプ文章 */
+    .sp_camp {
+        padding: 50px 8% 40px;
+        font-family: 游ゴシック;
+        font-weight: normal;
+        font-size: 15px;
+        color: #000000;
+        letter-spacing: 0.05em;
+        line-height: 2em;
+        text-align: left;
+        box-sizing: border-box;
+    }
+
+    /* ゴルフの写真 */
+    .sp_golf_play {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* ゴルフ文章 */
+    .sp_golf {
+        padding: 50px 8% 40px;
+        font-family: 游ゴシック;
+        font-weight: normal;
+        font-size: 15px;
+        color: #000000;
+        letter-spacing: 0.05em;
+        line-height: 2em;
+        text-align: left;
+        box-sizing: border-box;
+    }
+
+    /* 野球観戦の写真 */
+    .sp_baseball {
+        width: 100%;
+        text-align: center;
+    }
+
+    .baseball {
+        display: none;
+    }
+
+    /* 野球文章 */
+    .sp_baseball_pro {
+        padding: 50px 8% 40px;
+        font-family: 游ゴシック;
+        font-weight: normal;
+        font-size: 15px;
+        color: #000000;
+        letter-spacing: 0.05em;
+        line-height: 2em;
+        text-align: left;
+        box-sizing: border-box;
+    }
+
+    /* CONTACTより下全部の外側 */
+    .sp_two {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    /* CONTACT */
+    .sp_toi {
+        font-family: 游明朝;
+        font-size: 35px;
+        letter-spacing: 0.1em;
+        text-align: center;
+        margin: 0 auto;
+        color: #8a8062;
+        padding-top: 70px;
+    }
+
+    /* ロゴ/チラシ～案内文 */
+    .sp_sigoto {
+        padding: 50px 8% 0;
+        font-family: 游ゴシック;
+        font-weight: normal;
+        font-size: 15px;
+        color: #8a8062;
+        letter-spacing: 0.1em;
+        line-height: 1.67em;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    /* ご相談～文章 */
+    .sp_irai {
+        padding: 40px 8% 80px;
+        font-family: 游ゴシック;
+        font-weight: normal;
+        font-size: 15px;
+        color: #8a8062;
+        letter-spacing: 0.1em;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    /* お問合わせボタン */
+    /* .sp_more {
+        text-align: center;
+    } */
+
+    /* アニメーションボタン */
+    .sp_more {
+        background: #d3d3d3;
+        color: #000000;
+        border: none;
+        position: relative;
+        height: 60px;
+        font-size: 1.6em;
+        cursor: pointer;
+        transition: 800ms ease all;
+        outline: none;
+        font-family: 游明朝;
+        width: 60%;
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+        letter-spacing: 0.1em;
+        display: block;
+        background: #c4b69a;
+        border-radius: 20px;
+        cursor: pointer;
+        border: none;
+        text-align: center;
+        margin: 40px auto 0;
+    }
+
+    .sp_more:hover {
+        background: #000000;
+        color: #c4b69a;
+    }
+
+    /* ↑ここまでアニメーションボタン */
+
+    .sp_footer_logo {
+        padding: 100px 8% 40px;
+        width: 60%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .sp_last {
+        font-family: 游明朝;
+        font-size: 14px;
+        letter-spacing: 0.1em;
+        text-align: center;
+        margin: 0 auto;
+        color: #000000;
+        padding-bottom: 30px;
+    }
+}

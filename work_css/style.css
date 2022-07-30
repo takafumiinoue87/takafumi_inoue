@@ -1,0 +1,434 @@
+@charset "utf-8";
+
+/* リセット */
+html,
+body,
+header,
+footer,
+main,
+section,
+h1,
+h2,
+h3,
+ul,
+li,
+p,
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: #000000;
+    font-family: "A1 Mincho", "游明朝", YuMincho, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", "Sheila", sans-serif;
+    font-feature-settings: "palt";
+}
+
+a {
+    /*下線を消す*/
+    text-decoration: none;
+    /*色を消す*/
+    color: inherit;
+    transition: 0.3s;
+}
+
+/* a:hover {
+    opacity: 0.5;
+} */
+
+ul {
+    /*左の「・」を消す*/
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    border: none;
+}
+
+/* ここから */
+
+html {
+    scroll-behavior: smooth;
+    /* スムーズにスクロールさせるコード */
+}
+
+body {
+    background: #dddddd;
+}
+
+
+/* ************************************************************** こ こ か ら ********************************************************************* */
+
+/* section_one外側 */
+.work_one_job {
+    background: #a6b6bd;
+    width: 100%;
+}
+
+/* WORKと制作物の外枠 */
+.work_moji {
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+/* WORK */
+.pc_flame_work {
+    padding-bottom: 20px;
+    font-size: 40px;
+    font-family: 游明朝;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+}
+
+/* 制作物 */
+.make_work {
+    padding-bottom: 100px;
+    font-size: 16px;
+    font-family: 游ゴシック;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+}
+
+/* 画像 外枠 */
+.job_work {
+    /* padding: 0 50px 0 100px; */
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0 30px;
+    width: 100%;
+}
+
+.job_work img {
+    padding-bottom: 80px;
+}
+
+
+
+/* BACKボタン外枠 */
+.bt {
+    margin-top: 50px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+/* BACKアニメーションボタン */
+.back_work {
+    font-size: 1.6em;
+    cursor: pointer;
+    transition: 800ms ease all;
+    outline: none;
+    font-family: 游明朝;
+    max-width: 320px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    display: block;
+    background: #6b809e;
+    color: #ffffff;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    margin: 0 auto;
+}
+
+.back_work:hover {
+    background: #000000;
+    color: #c4b69a;
+}
+
+/* CONTACTグレー画面外枠 */
+.two_work {
+    text-align: center;
+    width: 100%;
+    background: #dddddd;
+}
+
+/* CONTACT */
+.toi_work {
+    padding: 100px 0 50px;
+    font-size: 40px;
+    font-family: 游明朝;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    color: #717ada;
+}
+
+/* ロゴ~文章 */
+.sigoto_work {
+    color: #717ada;
+    font-size: 20px;
+    font-family: 游ゴシック;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    padding-bottom: 20px;
+}
+
+/* ご相談～文章 */
+.irai_work {
+    color: #717ada;
+    font-size: 20px;
+    font-family: 游ゴシック;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+}
+
+/* お問い合わせボタン外枠 */
+.work_bt {
+    margin-top: 100px;
+    padding-bottom: 120px;
+    text-align: center;
+}
+
+/* お問い合わせボタン */
+.two_work_bt {
+    font-size: 1.6em;
+    cursor: pointer;
+    transition: 800ms ease all;
+    outline: none;
+    font-family: 游明朝;
+    max-width: 320px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    display: block;
+    background: #6b809e;
+    color: #ffffff;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    margin: 0 auto;
+}
+
+.work_bt .two_work_bt:hover {
+    background: #000000;
+    color: #c4b69a;
+}
+
+/* footer外枠 */
+.work_footer {
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* Rise atロゴ */
+.work_footer_logo {
+    padding-bottom: 60px;
+    width: 60%;
+    display: inline-block;
+}
+
+/* コピーライト */
+.work_last {
+    padding-bottom: 50px;
+    font-size: 20px;
+    font-family: 游明朝;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    color: #000000;
+}
+
+
+.sp_bt {
+    display: none;
+}
+
+.sp_back_work {
+    display: none;
+}
+
+.sp_work_bt {
+    display: none;
+}
+
+.sp_two_work_bt {
+    display: none;
+}
+
+/* ********************************************************  スマホ版  *************************************************************** */
+/* スマホ対応↓ 767pxだがillustratorは375pxで作成375で数値等考えていい */
+@media screen and (max-width:767px) {
+
+    /* WORK */
+    .pc_flame_work {
+        padding-bottom: 20px;
+        font-size: 28px;
+        font-family: 游明朝;
+        font-weight: normal;
+        letter-spacing: 0.1em;
+        color: #ffffff;
+    }
+
+    /* 制作物 */
+    .make_work {
+        padding-bottom: 60px;
+        font-size: 15px;
+        font-family: 游ゴシック;
+        font-weight: normal;
+        letter-spacing: 0.1em;
+        color: #ffffff;
+    }
+
+
+    .job_work {
+        /* padding: 0 50px 0 100px; */
+        box-sizing: border-box;
+        text-align: center;
+        padding: 0 20px;
+        width: 100%;
+    }
+
+    .job_work img {
+        padding-bottom: 30px;
+    }
+
+
+    .bt {
+        display: none;
+    }
+
+    /* BACKボタン */
+    .sp_bt {
+        margin-top: 50px;
+        padding-bottom: 100px;
+        text-align: center;
+        display: block;
+    }
+
+    .back_work {
+        display: none;
+    }
+
+    /* BACKアニメーションボタン */
+    .sp_back_work {
+        transition: 800ms ease all;
+        outline: none;
+        font-family: 游明朝;
+        max-width: 60%;
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+        letter-spacing: 0.1em;
+        display: block;
+        background: #6b809e;
+        color: #ffffff;
+        border-radius: 20px;
+        cursor: pointer;
+        border: none;
+        margin: 0 auto;
+        display: block;
+    }
+
+
+    .sp_back_work:hover {
+        background: #000000;
+        color: #c4b69a;
+    }
+
+    /* CONTACTグレー画面外枠 */
+    .two_work {
+        text-align: center;
+    }
+
+    /* CONTACT */
+    .toi_work {
+        padding: 80px 0 30px;
+        font-size: 28px;
+        font-family: 游明朝;
+        font-weight: normal;
+        letter-spacing: 0.1em;
+        color: #717ada;
+    }
+
+    /* ロゴ~文章 */
+    .sigoto_work {
+        color: #717ada;
+        font-size: 15px;
+        font-family: 游ゴシック;
+        font-weight: normal;
+        letter-spacing: 0.1em;
+        padding-bottom: 20px;
+    }
+
+    /* ご相談～文章 */
+    .irai_work {
+        color: #717ada;
+        font-size: 15px;
+        font-family: 游ゴシック;
+        font-weight: normal;
+        letter-spacing: 0.1em;
+    }
+
+    .work_bt {
+        display: none;
+    }
+
+    /* お問い合わせボタン外枠 */
+    .sp_work_bt {
+        margin-top: 100px;
+        padding-bottom: 120px;
+        text-align: center;
+        display: block;
+    }
+
+    .two_work_bt {
+        display: none;
+    }
+
+    /* お問い合わせボタン */
+    .sp_two_work_bt {
+        transition: 800ms ease all;
+        outline: none;
+        font-family: 游明朝;
+        width: 60%;
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+        letter-spacing: 0.1em;
+        display: block;
+        background: #6b809e;
+        color: #ffffff;
+        border-radius: 20px;
+        cursor: pointer;
+        border: none;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .sp_work_bt .sp_two_work_bt:hover {
+        background: #000000;
+        color: #c4b69a;
+    }
+
+    /* footer外枠 */
+    .work_footer {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    /* Rise atロゴ */
+    .work_footer_logo {
+        padding-bottom: 60px;
+        width: 60%;
+        display: inline-block;
+    }
+
+    /* コピーライト */
+    .work_last {
+        padding-bottom: 50px;
+        font-size: 15px;
+        font-family: 游明朝;
+        font-weight: normal;
+        letter-spacing: 0.1em;
+        color: #000000;
+    }
+}

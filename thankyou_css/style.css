@@ -1,0 +1,355 @@
+@charset "utf-8";
+
+/* リセット */
+html,
+body,
+header,
+footer,
+main,
+section,
+h1,
+h2,
+h3,
+ul,
+li,
+p,
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: #000000;
+    font-family: "はれのそら明朝", "Sheila", "A1 Mincho", "游明朝", YuMincho, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", sans-serif;
+    font-feature-settings: "palt";
+}
+
+a {
+    /*下線を消す*/
+    text-decoration: none;
+    /*色を消す*/
+    color: inherit;
+    transition: 0.3s;
+}
+
+/* a:hover {
+    opacity: 0.5;
+} */
+
+ul {
+    /*左の「・」を消す*/
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    vertical-align: bottom;
+    border: none;
+}
+
+
+/* ****************************************ここから************************************************************: */
+
+/* 外枠 */
+.thank_flame {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+
+}
+
+/* firstview写真 */
+.thank_first {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* ２つの文章の外枠 */
+.thank_you {
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    left: 6%;
+    margin-top: 8%;
+    text-align: left;
+    letter-spacing: 0.1em;
+
+}
+
+/* お問い合わせ～h1 */
+.thank_toi {
+    font-size: 40px;
+    font-family: 游ゴシック;
+    color: #ffffff;
+
+}
+
+/* 文章 */
+.thank_bun {
+    font-size: 20px;
+    font-family: 游ゴシック;
+    color: #ffffff;
+    margin-top: 7%;
+    line-height: 2.5em;
+}
+
+/* Rise at... */
+.thank_logo {
+    width: 10%;
+    z-index: 1000;
+    position: absolute;
+    bottom: 4%;
+    left: 6%;
+}
+
+/* 角丸ボタン */
+.thank {
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* アニメーションボタン */
+.thank .you {
+    /* background: #d3d3d3; */
+    /* color: #000000; */
+    /* border: block; */
+    position: relative;
+    transition: 800ms ease all;
+    outline: none;
+    font-family: 游明朝;
+    width: 280px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    display: block;
+    /* background: #000000; */
+    border: 5px solid #ffffff;
+    border-radius: 20px;
+    cursor: pointer;
+    border: block;
+    position: absolute;
+    bottom: 5%;
+    left: 40%;
+}
+
+.you {
+    color: #ffffff;
+}
+
+.thank .you:hover {
+    background: #000000;
+    color: #c4b69a;
+}
+
+
+
+
+/* *****************************************************  S  P  版  *********************************************************************** */
+
+
+/* スマホ対応↓ 767pxだがillustratorは375pxで作成375で数値等考えていい*/
+@media screen and (max-width:1000px) {
+
+    .thank_you {
+        z-index: 1000;
+        position: absolute;
+        top: 0;
+        left: 6%;
+        margin-top: 6%;
+        text-align: left;
+        letter-spacing: 0.1em;
+
+    }
+
+    /* お問い合わせ～h1 */
+    .thank_toi {
+        font-size: 23px;
+        font-family: 游ゴシック;
+        color: #ffffff;
+
+    }
+
+    /* 文章 */
+    .thank_bun {
+        font-size: 15px;
+        font-family: 游ゴシック;
+        color: #ffffff;
+        margin-top: 7%;
+        line-height: 2em;
+    }
+
+    /* 角丸ボタン */
+    .thank {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    /* アニメーションボタン */
+    .thank .you {
+        position: relative;
+        transition: 800ms ease all;
+        outline: none;
+        font-family: 游明朝;
+        width: 30%;
+        height: 40px;
+        line-height: 40px;
+        font-size: 18px;
+        letter-spacing: 0.1em;
+        display: block;
+        border: 5px solid #ffffff;
+        border-radius: 20px;
+        cursor: pointer;
+        border: block;
+        position: absolute;
+        bottom: 5%;
+        left: 40%;
+    }
+
+    .you {
+        color: #ffffff;
+    }
+
+    .thank .you:hover {
+        background: #000000;
+        color: #c4b69a;
+    }
+}
+
+
+@media screen and (max-width:500px) {
+
+    .thank_you {
+        z-index: 1000;
+        position: absolute;
+        top: 0;
+        left: 6%;
+        margin-top: 6%;
+        text-align: left;
+        letter-spacing: 0.1em;
+
+    }
+
+    /* お問い合わせ～h1 */
+    .thank_toi {
+        font-size: 20px;
+        font-family: 游ゴシック;
+        color: #ffffff;
+
+    }
+
+    /* 文章 */
+    .thank_bun {
+        font-size: 13px;
+        font-family: 游ゴシック;
+        color: #ffffff;
+        margin-top: 4%;
+        line-height: 1.5em;
+    }
+
+    /* 角丸ボタン */
+    .thank {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    /* アニメーションボタン */
+    .thank .you {
+        position: relative;
+        transition: 800ms ease all;
+        outline: none;
+        font-family: 游明朝;
+        width: 30%;
+        height: 30px;
+        line-height: 30px;
+        font-size: 15px;
+        letter-spacing: 0.1em;
+        display: block;
+        border: 5px solid #ffffff;
+        border-radius: 20px;
+        cursor: pointer;
+        border: block;
+        position: absolute;
+        bottom: 5%;
+        left: 40%;
+    }
+
+    .you {
+        color: #ffffff;
+    }
+
+    .thank .you:hover {
+        background: #000000;
+        color: #c4b69a;
+    }
+}
+
+@media screen and (max-width:420px) {
+
+    .thank_you {
+        z-index: 1000;
+        position: absolute;
+        top: 0;
+        left: 6%;
+        margin-top: 2%;
+        text-align: left;
+        letter-spacing: 0.1em;
+
+    }
+
+    /* お問い合わせ～h1 */
+    .thank_toi {
+        font-size: 12px;
+        font-family: 游ゴシック;
+        color: #ffffff;
+    }
+
+    /* 文章 */
+    .thank_bun {
+        font-size: 10px;
+        font-family: 游ゴシック;
+        color: #ffffff;
+        margin-top: 1%;
+        line-height: 1em;
+    }
+
+    /* 角丸ボタン */
+    .thank {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    /* アニメーションボタン */
+    .thank .you {
+        position: relative;
+        transition: 800ms ease all;
+        outline: none;
+        font-family: 游明朝;
+        width: 20%;
+        height: 20px;
+        line-height: 20px;
+        font-size: 13px;
+        letter-spacing: 0.1em;
+        display: block;
+        border: 5px solid #ffffff;
+        border-radius: 20px;
+        cursor: pointer;
+        border: block;
+        position: absolute;
+        bottom: 5%;
+        left: 40%;
+    }
+
+    .you {
+        color: #ffffff;
+    }
+
+    .thank .you:hover {
+        background: #000000;
+        color: #c4b69a;
+    }
+
+
+
+}
